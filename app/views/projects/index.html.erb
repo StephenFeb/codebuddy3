@@ -1,0 +1,11 @@
+<p>List of Projects</p>
+<div class="container">
+    <div class="row">
+        <% @project.each do |project| %>
+            <%= project.title %>
+            <%= project.description %>
+            <%= project.languages %>
+        <% end %>
+    </div>
+
+</div>

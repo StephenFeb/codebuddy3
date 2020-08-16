@@ -1,0 +1,12 @@
+<p>List of all users</p>
+<div class="container">
+    <div class="row">
+        <% @user.each do |user| %>
+            <%= user.name %>
+            <%= user.location %>
+            <%= user.languages %>
+        <% end %>
+    </div>
+
+</div>
+<%= link_to "Projects", "/projects", class: "btn btn-primary" %>
